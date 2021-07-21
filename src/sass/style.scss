@@ -1,12 +1,23 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-$bg-color: #222222;
-
-body {
-    color: white;
-    background-color: $bg-color;
+.card {
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
-.card {
-    color: black;
+.page-container {
+    max-width: 600px;
+}
+
+.registration-form {
+    display: "flex";
+}
+
+input {
+    display: block;
+}
+
+label {
+    display: block;
 }

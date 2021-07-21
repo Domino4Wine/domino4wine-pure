@@ -10,9 +10,66 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Domino4Wine</h1>
-        <div class="card">Test Bootstrap card</div>
+    <div class="container page-container">
+        <div class="card banner">
+            <img src="assets/cropped-with-title.jpg" class="card-img" alt="...">
+        </div>
+
+        <div class="card registration-form">
+            <form>
+                <p>Register to download:</p>
+                <label for="firstName">First Name:</label>
+                <input type="text" placeholder="Enter first name" name="firstName" id="firstName" required>
+                <br />
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" placeholder="Enter last name" name="lastName" id="lastName" required>
+                <br />
+
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter email" name="email" id="email" required>
+                <br />
+
+                <button type="submit" class="">Register</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h1>Dominow4Wine</h1>
+            <h2>Finally, run Domino Designer and Administrator NATIVELY on Mac and Linux</h2>
+            <h3>Powered by WINE and CrossOver, with engineering and test support by Prominic.NET, Inc.</h3>
+        </div>
+
+        <div class="card">
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/117342115" frameborder="0" width="100%"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="card">
+            <p class="card-title">What is Wine?</p>
+            <p class="card-content">
+                Wine (originally an acronym for “Wine Is Not an Emulator”) is a compatibility layer capable of running
+                Windows applications on several POSIX-compliant operating systems, such as Linux, Mac OS X, & BSD.
+                Instead of simulating internal Windows logic like a virtual machine or emulator, Wine translates Windows
+                API calls into POSIX calls on-the-fly, eliminating the performance and memory penalties of other methods
+                and allowing you to cleanly integrate Windows applications into your desktop.
+            </p>
+        </div>
+
+        <div class="card">
+            <p class="card-title">Why CrossOver?</p>
+            <p class="card-content">
+                CrossOver, while composed primarily of WINE open-source core, also contains proprietary “value-add”
+                components. CrossOver gives you the ability to run multiple INDEPENDENT copies of the Notes Client,
+                Domino Administrator, and Domino Designer simultaneously — all while using separate Notes IDs — with
+                much lower overhead and licensing costs than any available virtualization technology. CrossOver does not
+                require an underlying Windows license and provides less CPU overhead, and therefore a much longer
+                battery life.
+            </p>
+        </div>
+
+
+
     </div>
 </body>
 
