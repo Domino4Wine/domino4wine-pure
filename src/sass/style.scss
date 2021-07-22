@@ -2,16 +2,51 @@
 
 .card {
     padding: 0;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin: 16px;
 }
 
 .page-container {
-    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "banner"
+        "form"
+        "content";
+}
+
+@include media-breakpoint-up(md) {
+    .page-container {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "form banner"
+            "form content";
+    }
+}
+
+.banner {
+    grid-area: banner;
 }
 
 .registration-form {
-    display: "flex";
+    grid-area: form;
+    height: 400px;
+}
+
+@include media-breakpoint-up(md) {
+    .registration-form {
+        position: sticky;
+        top: 0px;
+    }
+}
+
+.content {
+    grid-area: content;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 input {
