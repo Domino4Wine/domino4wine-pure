@@ -92,6 +92,88 @@
                 </div>
             </div>
 
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-xl-4 p-4">
+                            <img src="../src/assets/domino_Notes.png" class="img-fluid m-2">
+                            <p class="text-center">IBM Notes<br>on Linux or Mac OS X</p>
+                        </div>
+                        <div class="col-xl-4 p-4">
+                            <img src="../src/assets/domino_Administrator.png" class="img-fluid m-2">
+                            <p class="text-center">IBM Domino Administrator<br>on Linux or Mac OS X</p>
+                        </div>
+                        <div class="col-xl-4 p-4">
+                            <img src="../src/assets/domino_Designer.png" class="img-fluid m-2">
+                            <p class="text-center">IBM Domino Designer<br>on Linux or Mac OS X</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow">
+                <div class="card-body">
+                    <p class="card-title fs-2">How to Install?</p>
+                    <p class="card-content fs-4 my-4 text-primary">
+                        Register to join the mailing list and see Designer&#160and&#160Administrator run natively on&#160Mac&#160and&#160Linux!
+                    </p>
+                    <p class="card-content">
+                        Once you received the Email with the download links, proceed with the following steps:
+                    </p>
+
+                    <p class="card-content">
+                    <ol>
+                        <li>
+                            Unzip, Launch and move CrossOver to Application folder if prompted
+                        </li>
+                        <li>
+                            Create a new Windows XP Bottle by clicking on the bottles icon at the top left of CrossOver, then click the + icon at the bottom left and select New Bottle.
+                        </li>
+                        <li>
+                            Configure the newly created Bottle:
+                            <ol>
+                                <li>Right-click the created Bottle and enable Legacy X Windows from theSettings submenu</li>
+                                <li>Reboot the Bottle when prompted</li>
+                                <li>Run Command “regedit”</li>
+                                <li>Navigate to HKEY_CURRENT_USER/Software/Wine/X11 Driver/</li>
+                                <li>In the right panel, right-click and create a new String Value and name it“ClientSideGraphics”</li>
+                                <li>Right-click on the newly created key and modify the value to “N”</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Install the prerequisite applications:
+                            <ol>
+                                <li>Install Windows Application, scroll to “Runtime Support Components”dropdown</li>
+                                <li>Select “Microsoft Visual C++ 6.0” and Proceed</li>
+                                <li>Select your newly created Bottle and finish the installation process</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Repeat the above steps for the following:
+                            <ol>
+                                <li>Platform SDK Redistributable: GDI+</li>
+                                <li>Internet Explorer 7. Install the XML Parser when prompted</li>
+                                <li>Flash Player 11</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Install IBM Notes Software:
+                            <ol>
+                                <li>Click Install Windows Application</li>
+                                <li>Select Other Application from the Unsupported Applications dropdown list</li>
+                                <li>Select “Choose installer File” browse to your Notes Client (Designer and Administrator) Installer</li>
+                            </ol>
+                        </li>
+                        <li>
+                            (If you are experiencing graphics artifacts Launch Wine Configuration and checkEmulate Virtual Desktop in the Graphics tab).
+                        </li>
+                    </ol>
+                    Once your trial version expires, please register your CrossOver full version using promo code “DOMINO” to support this project.
+                    </p>
+
+                </div>
+            </div>
+
         </div>
 
 
