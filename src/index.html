@@ -18,19 +18,21 @@
 
 
         <div class="card registration-form shadow">
-            <form>
+            <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
                 <p class="registration-form__title">Register to download</p>
-                <label for="firstName">First Name:</label>
-                <input class="input" type="text" placeholder="Enter first name" name="firstName" id="firstName" required>
+                <label for="first_name">First Name:</label>
+                <input class="input" type="text" placeholder="Enter first name" name="first_name" id="first_name" required>
                 <br />
 
-                <label for="lastName">Last Name:</label>
-                <input class="input" type="text" placeholder="Enter last name" name="lastName" id="lastName" required>
+                <label for="last_name">Last Name:</label>
+                <input class="input" type="text" placeholder="Enter last name" name="last_name" id="last_name" required>
                 <br />
 
                 <label for="email">Email:</label>
                 <input class="input" type="email" placeholder="Enter email" name="email" id="email" required>
                 <br />
+
+	            <input type="hidden" name="campaign_token" value="4RROV" />
 
                 <button class="btn btn-primary register-button" type="submit" class="">Register</button>
             </form>
